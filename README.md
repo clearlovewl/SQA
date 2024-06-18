@@ -1,10 +1,10 @@
 <!--
  * @Author: ll
- * @LastEditTime: 2024-06-18 12:47:46
+ * @LastEditTime: 2024-06-18 12:48:49
  * @LastEditors: ll
  * 无问西东
 -->
-
+<div align="center">
 <!-- DO NOT ADD CONDA DOWNLOADS... README CHANGES MUST BE APPROVED BY EDEN OR WILL -->
 
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pytorch-lightning)](https://pypi.org/project/pytorch-lightning/)
@@ -38,8 +38,8 @@
 
 </div>
 
-# SQA (subjective bias quality assessment)
-LCMOS IQA official code
+# SQA (Subjective bias Quality Assessment)
+LCMOS IQA official code.
 <!-- <img src="./titok.png" width="400px"></img> -->
 
 
