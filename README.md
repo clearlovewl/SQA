@@ -1,6 +1,6 @@
 <!--
  * @Author: ll
- * @LastEditTime: 2024-06-18 12:53:25
+ * @LastEditTime: 2024-06-18 12:55:36
  * @LastEditors: ll
  * 无问西东
 -->
@@ -37,6 +37,9 @@
 </p>
 
 </div>
+
+
+<img src="./img.png" width="450px"></img>
 
 # SQA (Subjective bias Quality Assessment)
 Implementation of <a href="https://arxiv.org/abs/2311.15846">Learning with Noisy Low-Cost MOS for Image Quality Assessment via Dual-Bias Calibration</a>, in Pytorch.
