@@ -1,6 +1,6 @@
 <!--
  * @Author: ll
- * @LastEditTime: 2024-06-18 12:48:49
+ * @LastEditTime: 2024-06-18 12:53:25
  * @LastEditors: ll
  * 无问西东
 -->
@@ -39,7 +39,7 @@
 </div>
 
 # SQA (Subjective bias Quality Assessment)
-LCMOS IQA official code.
+Implementation of <a href="https://arxiv.org/abs/2311.15846">Learning with Noisy Low-Cost MOS for Image Quality Assessment via Dual-Bias Calibration</a>, in Pytorch.
 <!-- <img src="./titok.png" width="400px"></img> -->
 
 
