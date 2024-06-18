@@ -1,0 +1,19 @@
+seed_everything: 42
+data:
+  class_path: DATA.MYds.MYDS
+  init_args:
+    aug: 0
+    img_size: 320
+    dataroot: ~/datasets/
+    seednum: 0
+    num_workers: 0
+    dataset: koniqpsp 
+    datasize: 10073
+    eta: [0.0,1.0]
+    iqatask: iqa    
+    # pre: P913
+    
+# optimizer:
+#   class_path: torch.optim.SGD
+#   init_args:
+#     lr: 0.01            

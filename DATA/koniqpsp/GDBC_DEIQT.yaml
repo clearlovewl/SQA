@@ -1,0 +1,72 @@
+seed_everything: 20
+trainer:
+  max_epochs: 50  
+  check_val_every_n_epoch: 1
+  # limit_train_batches: 100
+
+  # precision: 16
+  # profiler: simple
+model:
+  class_path: MODEL.LCMOS.MYmd.MYMD
+  init_args:          
+    model: 
+      class_path: MODEL.LCMOS.model.GDBC
+      init_args:   
+        snum: 1
+        ema: 0.9
+        sth: 0.01
+        encoder: 
+          class_path: util.net.deqt.DEIQT  
+
+optimizer:
+  class_path: torch.optim.Adam
+  init_args:
+    lr: 1.0e-04
+    # weight_decay: 0.05
+
+# lr_scheduler: 
+#   class_path: util.net.deqt.CosineLRScheduler
+#   init_args: 
+#     warmup_lr_init: 2.0e-7
+#     warmup_t: 3  
+#     T_max: 30
+#     eta_min: 2.0e-7
+
+lr_scheduler: 
+  class_path: util.net.net.CosineAnnealingminLR 
+  init_args:  
+    T_max: ${...trainer.max_epochs}
+    eta_min: 2.0e-7
+
+# lr_scheduler:
+#   # class_path: torch.optim.lr_scheduler.CosineAnnealingLR
+#   # class_path: util.net.net.CosineAnnealingminLR
+#   class_path: util.net.deqt.CosineLRScheduler
+#   init_args:
+#     # t_initial: 9
+#     # lr_min: 2.0e-7
+#     warmup_lr_init: 2.0e-7
+#     warmup_t: 3
+#     # cycle_limit: 1
+#     # t_in_epochs: True
+#     T_max: ${...trainer.max_epochs}
+#     T_max: 9
+#     eta_min: 2.0e-7
+
+# optimizer:
+#   class_path: torch.optim.Adam
+#   init_args:
+#     lr: 5.0e-05
+# lr_scheduler:
+#   class_path: torch.optim.lr_scheduler.CosineAnnealingLR
+#   init_args:
+#     T_max: ${...trainer.max_epochs}
+#     eta_min: 5.0e-7
+
+# lr_scheduler:
+#   class_path: torch.optim.lr_scheduler.CosineAnnealingLR
+#   init_args:
+#     T_max: 50
+#     eta_min: 5.0e-6
+
+
